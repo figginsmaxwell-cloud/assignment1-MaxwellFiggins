@@ -1,0 +1,105 @@
+/* ====== Basic reset so we don't rely on browser defaults ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== General body styling (required) ====== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #0b0f14; /* dark gamer background */
+  color: #e6e6e6;
+}
+
+/* ====== Sticky header with clear text + box shadow (required) ====== */
+header {
+  position: sticky; /* stays at top while scrolling */
+  top: 0;
+  z-index: 1000;
+
+  background-color: #101826;
+  color: #ffffff;
+  padding: 14px 18px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+header h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Nav menu with styled links + hover effects (required) ====== */
+nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cfe7ff;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: transform 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 170, 255, 0.20);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* optional: show current page if you add class="active" on that link */
+nav a.active {
+  background-color: rgba(0, 170, 255, 0.35);
+  color: #ffffff;
+}
+
+/* ====== Centered main content using flexbox (required) ====== */
+/* This assumes your HTML uses <main> ... </main> */
+main {
+  min-height: calc(100vh - 160px); /* keeps footer from riding up */
+  display: flex;
+  justify-content: center;
+  padding: 30px 16px;
+}
+
+/* Content container inside main (nice readable width) */
+main .container {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 22px;
+}
+
+/* basic typography */
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* simple section spacing */
+section {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ====== Footer styled to match header (required) ====== */
+footer {
+  background-color: #101826;
+  color: #cfe7ff;
+  text-align: center;
+  padding: 14px 18px;
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
+}
