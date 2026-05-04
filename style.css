@@ -9,8 +9,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: #0b0f14; /* dark gamer background */
-  color: #e6e6e6;
+  background-color: #f4f4f4;
+  color: #111;
 }
 
 /* ====== Sticky header with clear text + box shadow (required) ====== */
@@ -113,14 +113,20 @@ footer {
 }
 
 .dark-mode {
-  background-color: #111;
-  color: white;
+  background-color: #0b0f14;
+  color: #e6e6e6;
 }
 
 .dark-mode header,
 .dark-mode footer,
 .dark-mode nav {
-  background-color: #222;
+  background-color: #101826;
+  color: white;
+}
+
+.dark-mode section {
+  background-color: #151c27;
+  color: #e6e6e6;
 }
 
 .dark-mode a {
