@@ -132,3 +132,34 @@ footer {
 .dark-mode a {
   color: #66b3ff;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  #themeButton {
+    width: calc(100% - 30px);
+  }
+}
